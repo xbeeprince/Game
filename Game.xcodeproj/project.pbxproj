@@ -10,13 +10,15 @@
 		A33E24B2258305EB0075C225 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A33E24B1258305EB0075C225 /* main.cpp */; };
 		A3A89DAE25831264003EEDFB /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A89DAD25831264003EEDFB /* OpenGL.framework */; };
 		A3A89DB02583126A003EEDFB /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A89DAF2583126A003EEDFB /* GLUT.framework */; };
-		A3A89DB525831304003EEDFB /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = A3A89DB425831304003EEDFB /* glad.c */; };
 		A3A89DC3258316AB003EEDFB /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A89DC2258316AB003EEDFB /* libglfw.3.3.dylib */; };
 		A3A89DC5258316EA003EEDFB /* libGLEW.2.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A89DBA258314F4003EEDFB /* libGLEW.2.2.0.dylib */; };
 		A3A89DCB25831879003EEDFB /* BaseGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3A89DC925831879003EEDFB /* BaseGame.cpp */; };
 		A3A89DD1258349FA003EEDFB /* ShaderManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3A89DCF258349FA003EEDFB /* ShaderManager.cpp */; };
 		A3A89DDC25834F37003EEDFB /* Exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3A89DDA25834F37003EEDFB /* Exception.cpp */; };
 		A3A89DE325835BF5003EEDFB /* FileManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3A89DE125835BF5003EEDFB /* FileManager.cpp */; };
+		A3A89DEE25837FF7003EEDFB /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = A3A89DEB25837FD3003EEDFB /* glad.c */; };
+		A3A89DF325838032003EEDFB /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3A89DF125838032003EEDFB /* Window.cpp */; };
+		A3A89DFA258385A0003EEDFB /* TriangleGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3A89DF8258385A0003EEDFB /* TriangleGame.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,7 +38,6 @@
 		A33E24B1258305EB0075C225 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A3A89DAD25831264003EEDFB /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		A3A89DAF2583126A003EEDFB /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
-		A3A89DB425831304003EEDFB /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = glad.c; path = "../../../书籍/glad/src/glad.c"; sourceTree = "<group>"; };
 		A3A89DBA258314F4003EEDFB /* libGLEW.2.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.2.0.dylib; path = ../../../../usr/local/Cellar/glew/2.2.0/lib/libGLEW.2.2.0.dylib; sourceTree = "<group>"; };
 		A3A89DC2258316AB003EEDFB /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../usr/local/Cellar/glfw/3.3.2/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
 		A3A89DC925831879003EEDFB /* BaseGame.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BaseGame.cpp; sourceTree = "<group>"; };
@@ -49,6 +50,11 @@
 		A3A89DE125835BF5003EEDFB /* FileManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileManager.cpp; sourceTree = "<group>"; };
 		A3A89DE225835BF5003EEDFB /* FileManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FileManager.hpp; sourceTree = "<group>"; };
 		A3A89DE82583784F003EEDFB /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; path = res; sourceTree = "<group>"; };
+		A3A89DEB25837FD3003EEDFB /* glad.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
+		A3A89DF125838032003EEDFB /* Window.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Window.cpp; sourceTree = "<group>"; };
+		A3A89DF225838032003EEDFB /* Window.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Window.hpp; sourceTree = "<group>"; };
+		A3A89DF8258385A0003EEDFB /* TriangleGame.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TriangleGame.cpp; sourceTree = "<group>"; };
+		A3A89DF9258385A0003EEDFB /* TriangleGame.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = TriangleGame.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,10 +92,10 @@
 		A33E24B0258305EB0075C225 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				A3A89DEA25837FC2003EEDFB /* utils */,
 				A3A89DE82583784F003EEDFB /* res */,
 				A3A89DC825831854003EEDFB /* include */,
 				A3A89DC725831849003EEDFB /* src */,
-				A3A89DB425831304003EEDFB /* glad.c */,
 				A33E24B1258305EB0075C225 /* main.cpp */,
 			);
 			path = Game;
@@ -109,7 +115,9 @@
 		A3A89DC725831849003EEDFB /* src */ = {
 			isa = PBXGroup;
 			children = (
+				A3A89DF125838032003EEDFB /* Window.cpp */,
 				A3A89DC925831879003EEDFB /* BaseGame.cpp */,
+				A3A89DF8258385A0003EEDFB /* TriangleGame.cpp */,
 				A3A89DE125835BF5003EEDFB /* FileManager.cpp */,
 				A3A89DDA25834F37003EEDFB /* Exception.cpp */,
 				A3A89DCF258349FA003EEDFB /* ShaderManager.cpp */,
@@ -125,8 +133,18 @@
 				A3A89DD0258349FA003EEDFB /* ShaderManager.hpp */,
 				A3A89DDB25834F37003EEDFB /* Exception.hpp */,
 				A3A89DE225835BF5003EEDFB /* FileManager.hpp */,
+				A3A89DF225838032003EEDFB /* Window.hpp */,
+				A3A89DF9258385A0003EEDFB /* TriangleGame.hpp */,
 			);
 			path = include;
+			sourceTree = "<group>";
+		};
+		A3A89DEA25837FC2003EEDFB /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				A3A89DEB25837FD3003EEDFB /* glad.c */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,12 +203,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3A89DF325838032003EEDFB /* Window.cpp in Sources */,
+				A3A89DFA258385A0003EEDFB /* TriangleGame.cpp in Sources */,
 				A3A89DD1258349FA003EEDFB /* ShaderManager.cpp in Sources */,
 				A3A89DCB25831879003EEDFB /* BaseGame.cpp in Sources */,
 				A33E24B2258305EB0075C225 /* main.cpp in Sources */,
 				A3A89DE325835BF5003EEDFB /* FileManager.cpp in Sources */,
 				A3A89DDC25834F37003EEDFB /* Exception.cpp in Sources */,
-				A3A89DB525831304003EEDFB /* glad.c in Sources */,
+				A3A89DEE25837FF7003EEDFB /* glad.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

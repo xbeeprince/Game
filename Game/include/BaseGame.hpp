@@ -17,9 +17,9 @@ namespace GameEngine {
     private:
     
     public:
-        void initialize();
-        void update();
-        void render();
+        virtual void initialize();
+        virtual void update();
+        virtual void render();
     };
 }
 
