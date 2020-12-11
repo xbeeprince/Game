@@ -14,6 +14,9 @@
 		A3A89DC3258316AB003EEDFB /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A89DC2258316AB003EEDFB /* libglfw.3.3.dylib */; };
 		A3A89DC5258316EA003EEDFB /* libGLEW.2.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A3A89DBA258314F4003EEDFB /* libGLEW.2.2.0.dylib */; };
 		A3A89DCB25831879003EEDFB /* BaseGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3A89DC925831879003EEDFB /* BaseGame.cpp */; };
+		A3A89DD1258349FA003EEDFB /* ShaderManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3A89DCF258349FA003EEDFB /* ShaderManager.cpp */; };
+		A3A89DDC25834F37003EEDFB /* Exception.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3A89DDA25834F37003EEDFB /* Exception.cpp */; };
+		A3A89DE325835BF5003EEDFB /* FileManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3A89DE125835BF5003EEDFB /* FileManager.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +41,14 @@
 		A3A89DC2258316AB003EEDFB /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../usr/local/Cellar/glfw/3.3.2/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
 		A3A89DC925831879003EEDFB /* BaseGame.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BaseGame.cpp; sourceTree = "<group>"; };
 		A3A89DCA25831879003EEDFB /* BaseGame.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BaseGame.hpp; sourceTree = "<group>"; };
+		A3A89DCF258349FA003EEDFB /* ShaderManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ShaderManager.cpp; sourceTree = "<group>"; };
+		A3A89DD0258349FA003EEDFB /* ShaderManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ShaderManager.hpp; sourceTree = "<group>"; };
+		A3A89DD525834DE4003EEDFB /* Game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Game.hpp; sourceTree = "<group>"; };
+		A3A89DDA25834F37003EEDFB /* Exception.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Exception.cpp; sourceTree = "<group>"; };
+		A3A89DDB25834F37003EEDFB /* Exception.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Exception.hpp; sourceTree = "<group>"; };
+		A3A89DE125835BF5003EEDFB /* FileManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FileManager.cpp; sourceTree = "<group>"; };
+		A3A89DE225835BF5003EEDFB /* FileManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FileManager.hpp; sourceTree = "<group>"; };
+		A3A89DE82583784F003EEDFB /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; path = res; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +86,7 @@
 		A33E24B0258305EB0075C225 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				A3A89DE82583784F003EEDFB /* res */,
 				A3A89DC825831854003EEDFB /* include */,
 				A3A89DC725831849003EEDFB /* src */,
 				A3A89DB425831304003EEDFB /* glad.c */,
@@ -98,6 +110,9 @@
 			isa = PBXGroup;
 			children = (
 				A3A89DC925831879003EEDFB /* BaseGame.cpp */,
+				A3A89DE125835BF5003EEDFB /* FileManager.cpp */,
+				A3A89DDA25834F37003EEDFB /* Exception.cpp */,
+				A3A89DCF258349FA003EEDFB /* ShaderManager.cpp */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -105,7 +120,11 @@
 		A3A89DC825831854003EEDFB /* include */ = {
 			isa = PBXGroup;
 			children = (
+				A3A89DD525834DE4003EEDFB /* Game.hpp */,
 				A3A89DCA25831879003EEDFB /* BaseGame.hpp */,
+				A3A89DD0258349FA003EEDFB /* ShaderManager.hpp */,
+				A3A89DDB25834F37003EEDFB /* Exception.hpp */,
+				A3A89DE225835BF5003EEDFB /* FileManager.hpp */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -166,8 +185,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3A89DD1258349FA003EEDFB /* ShaderManager.cpp in Sources */,
 				A3A89DCB25831879003EEDFB /* BaseGame.cpp in Sources */,
 				A33E24B2258305EB0075C225 /* main.cpp in Sources */,
+				A3A89DE325835BF5003EEDFB /* FileManager.cpp in Sources */,
+				A3A89DDC25834F37003EEDFB /* Exception.cpp in Sources */,
 				A3A89DB525831304003EEDFB /* glad.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

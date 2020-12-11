@@ -7,6 +7,8 @@
 
 #include "BaseGame.hpp"
 
+namespace GameEngine {
+
 void BaseGame::initialize() {
     
 }
@@ -18,3 +20,6 @@ void BaseGame::update() {
 void BaseGame::render() {
     
 }
+}
+
+

@@ -8,16 +8,20 @@
 #ifndef BaseGame_hpp
 #define BaseGame_hpp
 
-#include <iostream>
+#include "Game.hpp"
 
-class BaseGame {
+namespace GameEngine {
+
+    class BaseGame {
     
-private:
+    private:
     
-public:
-    void initialize();
-    void update();
-    void render();
-};
+    public:
+        void initialize();
+        void update();
+        void render();
+    };
+}
+
 
 #endif /* BaseGame_hpp */
