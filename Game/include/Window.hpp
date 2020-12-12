@@ -9,6 +9,7 @@
 #define Window_hpp
 
 #include "Game.hpp"
+#include "BaseGame.hpp"
 
 namespace GameEngine {
 
@@ -17,12 +18,14 @@ typedef void (*function_ptr)(void);
 class Window {
 private:
     GLFWwindow* m_window;
+    BaseGame *m_game;
 public:
     Window();
     ~Window();
     
+    Window(BaseGame*);
     void create();
-    void loop(function_ptr);
+    void loop();
 };
 }
 

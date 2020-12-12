@@ -14,43 +14,12 @@
 using namespace std;
 using namespace GameEngine;
 
-BaseGame *game;
-
-
-
-void game_initialize() {
-    
-    game = new TriangleGame();
-    game->initialize();
-    
-    
-    
-    
-}
-
-void game_update() {
-    //调整transform、scale、rotate等
-    game->update();
-}
-
-void game_render() {
-    //渲染
-    game->render();
-    
-}
-
-void game_loop() {
-    game_update();
-    game_render();
-}
-
 
 int main(int argc, const char * argv[]) {
+    BaseGame *game = new TriangleGame();
+    Window *window = new Window(game);
     
-    Window *window = new Window();
-    game_initialize();
-    
-    window->loop(game_loop);
+    window->loop();
     return 0;
 }
 

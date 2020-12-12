@@ -32,6 +32,7 @@ TriangleGame::~TriangleGame() {
 }
 
 void TriangleGame::initialize() {
+    cout << "initialize..." << endl;
     //背景
     glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
     
@@ -52,10 +53,12 @@ void TriangleGame::initialize() {
 }
 
 void TriangleGame::update() {
-    
+    cout << "update..." << endl;
 }
 
 void TriangleGame::render() {
+    cout << "render" << endl;
+    
     glClear(GL_COLOR_BUFFER_BIT);
     
     shader->Use();

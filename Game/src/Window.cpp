@@ -13,10 +13,20 @@ void framebuffer_size_callback(GLFWwindow *window, int width, int height);
 void processInput(GLFWwindow *window);
 
 Window::Window() {
-    this->create();
+    m_game = nullptr;
+    create();
+}
+
+Window::Window(BaseGame *game) {
+    m_game = game;
+    create();
 }
 
 Window::~Window() {
+    if (m_game) {
+        delete m_game;
+    }
+
     glfwTerminate();
 }
 
@@ -51,9 +61,13 @@ void Window::create() {
     //   通过 glfwSetFramebufferSizeCallback glfw 函数 当窗口frame 变化时会调用。
     //    对于视网膜屏 Retain 屏   宽度和高度明显比原输入值更高一点。
     glfwSetFramebufferSizeCallback(m_window, framebuffer_size_callback);
+    
+    if (m_game) {
+        m_game->initialize();
+    }
 }
 
-void Window::loop(function_ptr function) {
+void Window::loop() {
     
     //   为了防止 渲染的图像一出现就退出 我们使用while 循环 。我们可以称之为Render Loop
     //    glfwWindowShouldClose 每次循环开始前检查一次GLFW 是否被要求退出 是true 的话渲染便结束了。
@@ -64,7 +78,10 @@ void Window::loop(function_ptr function) {
         //        当程序退出的时候 使用一个自定义的颜色清空屏幕  在每个新的渲染迭代可是的时候我们总希望清屏否则总是看到上次渲染的结果。
         //        我们可以使用glClear   GL_COLOR_BUFFER_BIT，GL_DEPTH_BUFFER_BIT和GL_STENCIL_BUFFER_BIT。 我们清空颜色 。
         
-        function();
+        if (m_game) {
+            m_game->update();
+            m_game->render();
+        }
         
         glfwSwapBuffers(m_window);
         //        glfwPollEvents 检查函数有没有触发什么事件 键盘输入 鼠标移动 并调用对应函数
